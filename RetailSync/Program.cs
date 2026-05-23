@@ -1,3 +1,5 @@
+using RetailSync.Helpers;
+
 namespace RetailSync
 {
     internal static class Program
@@ -11,6 +13,7 @@ namespace RetailSync
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+            UserSeederHelper.AdminSeed();
             Application.Run(new Form1());
         }
     }

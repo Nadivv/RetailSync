@@ -10,13 +10,13 @@ namespace RetailSync.Models
     //  INHERITANCE + POLYMORPHISM
     //  SuperAdmin extends Pengguna
     // ═══════════════════════════════════════════════════
-    class SuperAdmin : Pengguna
+    class Admin : Pengguna
     {
-        public SuperAdmin(int id, string nama, string username)
-            : base(id, nama, username, "Super Admin") { }
+        public Admin(int id, string nama, string username)
+            : base(id, nama, username, "Admin") { }
 
         // Polymorphism: implementasi berbeda dari BranchManager
-        public override string GetRoleLabel() => "[ SUPER ADMIN — HQ/Owner ]";
+        public override string GetRoleLabel() => "[ ADMIN — HQ/Owner ]";
 
         public override string[] GetMenuItems() => new[]
         {
