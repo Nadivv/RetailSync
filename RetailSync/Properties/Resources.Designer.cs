@@ -63,9 +63,29 @@ namespace RetailSync.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cuplikan_layar_2025_11_12_224424 {
+            get {
+                object obj = ResourceManager.GetObject("Cuplikan layar 2025-11-12 224424", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_adrien_olichon_1257089_2387532 {
             get {
                 object obj = ResourceManager.GetObject("pexels-adrien-olichon-1257089-2387532", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap projek_dashboard {
+            get {
+                object obj = ResourceManager.GetObject("projek dashboard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

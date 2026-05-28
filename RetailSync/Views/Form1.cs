@@ -1,8 +1,11 @@
-using System;
 using Npgsql;
+using RetailSync.Helpers;
+using RetailSync.Models;
+using System;
 using System.Security.Cryptography;
 using System.Text;
-using RetailSync.Helpers;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace RetailSync
 {
@@ -44,60 +47,59 @@ namespace RetailSync
         }
 
         private void button1_Click_2(object sender, EventArgs e)
+{
+    try
+    {
+        using (NpgsqlConnection conn = DatabaseHelper.GetConnection())
         {
-            try
+            conn.Open();
+
+            string query = @"
+            SELECT p.id_role
+            FROM pengguna p
+            WHERE p.username = @username
+            AND p.password = @password
+            AND p.is_aktif = TRUE";
+
+            using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
             {
-                using (NpgsqlConnection conn =
-                    DatabaseHelper.GetConnection())
+                cmd.Parameters.AddWithValue("@username", TbUsername.Text);
+                cmd.Parameters.AddWithValue("@password", HashPassword(TbPassword.Text));
+
+                using (NpgsqlDataReader reader = cmd.ExecuteReader())
                 {
-                    conn.Open();
-
-                    string query = @"
-            SELECT *
-            FROM pengguna
-            WHERE username = @username
-            AND password = @password
-            AND is_aktif = TRUE";
-
-                    using (NpgsqlCommand cmd =
-                        new NpgsqlCommand(query, conn))
+                    if (reader.Read())
                     {
-                        cmd.Parameters.AddWithValue(
-                            "@username",
-                            TbUsername.Text
-                        );
+                        int role = Convert.ToInt32(reader["id_role"]);
 
-                        cmd.Parameters.AddWithValue(
-                            "@password",
-                            HashPassword(TbPassword.Text)
-                        );
+                        MessageBox.Show("Role = " + role);
 
-                        NpgsqlDataReader reader =
-                            cmd.ExecuteReader();
-
-                        if (reader.Read())
+                        if (role == 1)
                         {
-                            MessageBox.Show("Login berhasil!");
-
-                            Form2 form = new Form2();
-                            form.Show();
-
+                            Form2 admin = new Form2();
+                            admin.Show();
                             this.Hide();
                         }
-                        else
+                        else if (role == 2)
                         {
-                            MessageBox.Show(
-                                "Username atau Password salah!"
-                            );
+                            Form3 manager = new Form3();
+                            manager.Show();
+                            this.Hide();
                         }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Username atau Password salah!");
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message);
+    }
+}
 
         private string HashPassword(string password)
         {

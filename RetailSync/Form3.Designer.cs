@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class Form2
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,15 @@
         {
             SuspendLayout();
             // 
-            // Form2
+            // Form3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.projek_dashboard;
-            ClientSize = new Size(1345, 960);
-            Name = "Form2";
-            Text = "Form2";
-            Load += Form2_Load;
+            BackgroundImage = Properties.Resources.Cuplikan_layar_2025_11_12_224424;
+            ClientSize = new Size(1150, 673);
+            Name = "Form3";
+            Text = "Form3";
+            Load += Form3_Load;
             ResumeLayout(false);
         }
 
