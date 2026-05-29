@@ -65,6 +65,20 @@
             button13 = new Button();
             label22 = new Label();
             panel2 = new Panel();
+            button21 = new Button();
+            button20 = new Button();
+            button19 = new Button();
+            button18 = new Button();
+            button17 = new Button();
+            label80 = new Label();
+            label72 = new Label();
+            label73 = new Label();
+            label74 = new Label();
+            label75 = new Label();
+            label76 = new Label();
+            label77 = new Label();
+            label78 = new Label();
+            label79 = new Label();
             label64 = new Label();
             label65 = new Label();
             label66 = new Label();
@@ -118,20 +132,6 @@
             button14 = new Button();
             label23 = new Label();
             button12 = new Button();
-            label72 = new Label();
-            label73 = new Label();
-            label74 = new Label();
-            label75 = new Label();
-            label76 = new Label();
-            label77 = new Label();
-            label78 = new Label();
-            label79 = new Label();
-            label80 = new Label();
-            button17 = new Button();
-            button18 = new Button();
-            button19 = new Button();
-            button20 = new Button();
-            button21 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -570,6 +570,134 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(736, 373);
             panel2.TabIndex = 37;
+            panel2.Paint += panel2_Paint_1;
+            // 
+            // button21
+            // 
+            button21.Image = (Image)resources.GetObject("button21.Image");
+            button21.Location = new Point(677, 342);
+            button21.Name = "button21";
+            button21.Size = new Size(18, 23);
+            button21.TabIndex = 101;
+            button21.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            button20.Image = (Image)resources.GetObject("button20.Image");
+            button20.Location = new Point(653, 342);
+            button20.Name = "button20";
+            button20.Size = new Size(18, 23);
+            button20.TabIndex = 100;
+            button20.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            button19.Image = (Image)resources.GetObject("button19.Image");
+            button19.Location = new Point(629, 342);
+            button19.Name = "button19";
+            button19.Size = new Size(18, 23);
+            button19.TabIndex = 99;
+            button19.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            button18.Image = (Image)resources.GetObject("button18.Image");
+            button18.Location = new Point(605, 342);
+            button18.Name = "button18";
+            button18.Size = new Size(18, 23);
+            button18.TabIndex = 98;
+            button18.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            button17.Image = (Image)resources.GetObject("button17.Image");
+            button17.Location = new Point(581, 342);
+            button17.Name = "button17";
+            button17.Size = new Size(18, 23);
+            button17.TabIndex = 38;
+            button17.UseVisualStyleBackColor = true;
+            // 
+            // label80
+            // 
+            label80.BackColor = Color.Transparent;
+            label80.Image = (Image)resources.GetObject("label80.Image");
+            label80.Location = new Point(33, 340);
+            label80.Name = "label80";
+            label80.Size = new Size(209, 25);
+            label80.TabIndex = 97;
+            // 
+            // label72
+            // 
+            label72.BackColor = Color.Transparent;
+            label72.Image = (Image)resources.GetObject("label72.Image");
+            label72.Location = new Point(661, 308);
+            label72.Name = "label72";
+            label72.Size = new Size(46, 18);
+            label72.TabIndex = 96;
+            // 
+            // label73
+            // 
+            label73.BackColor = Color.Transparent;
+            label73.Image = (Image)resources.GetObject("label73.Image");
+            label73.Location = new Point(578, 308);
+            label73.Name = "label73";
+            label73.Size = new Size(59, 18);
+            label73.TabIndex = 95;
+            // 
+            // label74
+            // 
+            label74.BackColor = Color.Transparent;
+            label74.Image = (Image)resources.GetObject("label74.Image");
+            label74.Location = new Point(471, 308);
+            label74.Name = "label74";
+            label74.Size = new Size(64, 20);
+            label74.TabIndex = 94;
+            // 
+            // label75
+            // 
+            label75.BackColor = Color.Transparent;
+            label75.Image = (Image)resources.GetObject("label75.Image");
+            label75.Location = new Point(315, 305);
+            label75.Name = "label75";
+            label75.Size = new Size(122, 21);
+            label75.TabIndex = 93;
+            // 
+            // label76
+            // 
+            label76.BackColor = Color.Transparent;
+            label76.Image = (Image)resources.GetObject("label76.Image");
+            label76.Location = new Point(230, 307);
+            label76.Name = "label76";
+            label76.Size = new Size(53, 18);
+            label76.TabIndex = 92;
+            // 
+            // label77
+            // 
+            label77.BackColor = Color.Transparent;
+            label77.Image = (Image)resources.GetObject("label77.Image");
+            label77.Location = new Point(43, 304);
+            label77.Name = "label77";
+            label77.Size = new Size(132, 25);
+            label77.TabIndex = 91;
+            // 
+            // label78
+            // 
+            label78.BackColor = Color.Transparent;
+            label78.Image = (Image)resources.GetObject("label78.Image");
+            label78.Location = new Point(6, 308);
+            label78.Name = "label78";
+            label78.Size = new Size(23, 18);
+            label78.TabIndex = 90;
+            // 
+            // label79
+            // 
+            label79.BackColor = Color.Transparent;
+            label79.FlatStyle = FlatStyle.Popup;
+            label79.Image = (Image)resources.GetObject("label79.Image");
+            label79.Location = new Point(7, 286);
+            label79.Name = "label79";
+            label79.Size = new Size(725, 59);
+            label79.TabIndex = 89;
             // 
             // label64
             // 
@@ -1054,133 +1182,6 @@
             button12.Size = new Size(173, 39);
             button12.TabIndex = 38;
             button12.UseVisualStyleBackColor = true;
-            // 
-            // label72
-            // 
-            label72.BackColor = Color.Transparent;
-            label72.Image = (Image)resources.GetObject("label72.Image");
-            label72.Location = new Point(661, 308);
-            label72.Name = "label72";
-            label72.Size = new Size(46, 18);
-            label72.TabIndex = 96;
-            // 
-            // label73
-            // 
-            label73.BackColor = Color.Transparent;
-            label73.Image = (Image)resources.GetObject("label73.Image");
-            label73.Location = new Point(578, 308);
-            label73.Name = "label73";
-            label73.Size = new Size(59, 18);
-            label73.TabIndex = 95;
-            // 
-            // label74
-            // 
-            label74.BackColor = Color.Transparent;
-            label74.Image = (Image)resources.GetObject("label74.Image");
-            label74.Location = new Point(471, 308);
-            label74.Name = "label74";
-            label74.Size = new Size(64, 20);
-            label74.TabIndex = 94;
-            // 
-            // label75
-            // 
-            label75.BackColor = Color.Transparent;
-            label75.Image = (Image)resources.GetObject("label75.Image");
-            label75.Location = new Point(315, 305);
-            label75.Name = "label75";
-            label75.Size = new Size(122, 21);
-            label75.TabIndex = 93;
-            // 
-            // label76
-            // 
-            label76.BackColor = Color.Transparent;
-            label76.Image = (Image)resources.GetObject("label76.Image");
-            label76.Location = new Point(230, 307);
-            label76.Name = "label76";
-            label76.Size = new Size(53, 18);
-            label76.TabIndex = 92;
-            // 
-            // label77
-            // 
-            label77.BackColor = Color.Transparent;
-            label77.Image = (Image)resources.GetObject("label77.Image");
-            label77.Location = new Point(43, 304);
-            label77.Name = "label77";
-            label77.Size = new Size(132, 25);
-            label77.TabIndex = 91;
-            // 
-            // label78
-            // 
-            label78.BackColor = Color.Transparent;
-            label78.Image = (Image)resources.GetObject("label78.Image");
-            label78.Location = new Point(6, 308);
-            label78.Name = "label78";
-            label78.Size = new Size(23, 18);
-            label78.TabIndex = 90;
-            // 
-            // label79
-            // 
-            label79.BackColor = Color.Transparent;
-            label79.FlatStyle = FlatStyle.Popup;
-            label79.Image = (Image)resources.GetObject("label79.Image");
-            label79.Location = new Point(7, 286);
-            label79.Name = "label79";
-            label79.Size = new Size(725, 59);
-            label79.TabIndex = 89;
-            // 
-            // label80
-            // 
-            label80.BackColor = Color.Transparent;
-            label80.Image = (Image)resources.GetObject("label80.Image");
-            label80.Location = new Point(33, 340);
-            label80.Name = "label80";
-            label80.Size = new Size(209, 25);
-            label80.TabIndex = 97;
-            // 
-            // button17
-            // 
-            button17.Image = (Image)resources.GetObject("button17.Image");
-            button17.Location = new Point(581, 342);
-            button17.Name = "button17";
-            button17.Size = new Size(18, 23);
-            button17.TabIndex = 38;
-            button17.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            button18.Image = (Image)resources.GetObject("button18.Image");
-            button18.Location = new Point(605, 342);
-            button18.Name = "button18";
-            button18.Size = new Size(18, 23);
-            button18.TabIndex = 98;
-            button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            button19.Image = (Image)resources.GetObject("button19.Image");
-            button19.Location = new Point(629, 342);
-            button19.Name = "button19";
-            button19.Size = new Size(18, 23);
-            button19.TabIndex = 99;
-            button19.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            button20.Image = (Image)resources.GetObject("button20.Image");
-            button20.Location = new Point(653, 342);
-            button20.Name = "button20";
-            button20.Size = new Size(18, 23);
-            button20.TabIndex = 100;
-            button20.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            button21.Image = (Image)resources.GetObject("button21.Image");
-            button21.Location = new Point(677, 342);
-            button21.Name = "button21";
-            button21.Size = new Size(18, 23);
-            button21.TabIndex = 101;
-            button21.UseVisualStyleBackColor = true;
             // 
             // Form7
             // 
