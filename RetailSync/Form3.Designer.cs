@@ -32,10 +32,11 @@
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Cuplikan_layar_2025_11_12_224424;
-            ClientSize = new Size(1150, 673);
+            ClientSize = new Size(923, 485);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form3";
             Text = "Form3";
             Load += Form3_Load;

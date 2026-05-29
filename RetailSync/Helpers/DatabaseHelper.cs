@@ -10,7 +10,7 @@ namespace RetailSync.Helpers
     static class DatabaseHelper
     {
         private static string connString =
-            "Host=localhost;Port=5432;Database=Final_Project_PBO;Username=postgres;Password=nadiv17!";
+            "Host=localhost;Port=5432;Database=Final_Project_PBO;Username=postgres;Password=123456";
         public static NpgsqlConnection GetConnection()
         {
             return new NpgsqlConnection(connString);
