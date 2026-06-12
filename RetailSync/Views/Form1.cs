@@ -52,58 +52,52 @@ namespace RetailSync
                 {
                     conn.Open();
 
-                    string query = @"
-                    SELECT p.id_pengguna, p.nama, p.username, p.id_role, r.nama_role
-                    FROM pengguna p
-                    JOIN roles r ON p.id_role = r.id_role
-                    WHERE p.username = @username
-                    AND p.password = @password
-                    AND p.is_aktif = TRUE";
+            string query = @"
+            SELECT p.id_role
+            FROM pengguna p
+            WHERE p.username = @username
+            AND p.password = @password
+            AND p.is_aktif = TRUE";
 
-                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+            using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@username", TbUsername.Text);
+                cmd.Parameters.AddWithValue("@password", HashPassword(TbPassword.Text));
+
+                using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
                     {
-                        cmd.Parameters.AddWithValue("@username", TbUsername.Text.Trim());
-                        cmd.Parameters.AddWithValue("@password", HashPassword(TbPassword.Text));
+                        int role = Convert.ToInt32(reader["id_role"]);
 
-                        using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                        MessageBox.Show("Role = " + role);
+
+                        if (role == 1)
                         {
-                            if (reader.Read())
-                            {
-                                // Simpan sesi
-                                UserContext.IdPengguna = reader.GetInt32(0);
-                                UserContext.Nama       = reader.GetString(1);
-                                UserContext.Username   = reader.GetString(2);
-                                UserContext.IdRole     = reader.GetInt32(3);
-                                UserContext.NamaRole   = reader.GetString(4);
-
-                                if (UserContext.IdRole == 1) // Admin
-                                {
-                                    Form2 admin = new Form2();
-                                    admin.Show();
-                                    this.Hide();
-                                }
-                                else if (UserContext.IdRole == 2) // Manager
-                                {
-                                    FormManager manager = new FormManager();
-                                    manager.Show();
-                                    this.Hide();
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("Username atau Password salah!", "Login Gagal",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            }
+                            Form2 admin = new Form2();
+                            admin.Show();
+                            this.Hide();
                         }
+                        else if (role == 2)
+                        {
+                            Form3 manager = new Form3();
+                            manager.Show();
+                            this.Hide();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Username atau Password salah!");
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Koneksi Gagal",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message);
+    }
+}
 
         private string HashPassword(string password)
         {
@@ -124,6 +118,11 @@ namespace RetailSync
 
                 return builder.ToString();
             }
+        }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     };
 }
