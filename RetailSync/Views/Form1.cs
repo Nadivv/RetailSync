@@ -4,8 +4,6 @@ using RetailSync.Models;
 using System;
 using System.Security.Cryptography;
 using System.Text;
-using static System.ComponentModel.Design.ObjectSelectorEditor;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace RetailSync
 {
@@ -47,59 +45,65 @@ namespace RetailSync
         }
 
         private void button1_Click_2(object sender, EventArgs e)
-{
-    try
-    {
-        using (NpgsqlConnection conn = DatabaseHelper.GetConnection())
         {
-            conn.Open();
-
-            string query = @"
-            SELECT p.id_role
-            FROM pengguna p
-            WHERE p.username = @username
-            AND p.password = @password
-            AND p.is_aktif = TRUE";
-
-            using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+            try
             {
-                cmd.Parameters.AddWithValue("@username", TbUsername.Text);
-                cmd.Parameters.AddWithValue("@password", HashPassword(TbPassword.Text));
-
-                using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                using (NpgsqlConnection conn = DatabaseHelper.GetConnection())
                 {
-                    if (reader.Read())
-                    {
-                        int role = Convert.ToInt32(reader["id_role"]);
+                    conn.Open();
 
-                        MessageBox.Show("Role = " + role);
+                    string query = @"
+                    SELECT p.id_pengguna, p.nama, p.username, p.id_role, r.nama_role
+                    FROM pengguna p
+                    JOIN roles r ON p.id_role = r.id_role
+                    WHERE p.username = @username
+                    AND p.password = @password
+                    AND p.is_aktif = TRUE";
 
-                        if (role == 1)
-                        {
-                            Form2 admin = new Form2();
-                            admin.Show();
-                            this.Hide();
-                        }
-                        else if (role == 2)
-                        {
-                            Form3 manager = new Form3();
-                            manager.Show();
-                            this.Hide();
-                        }
-                    }
-                    else
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
                     {
-                        MessageBox.Show("Username atau Password salah!");
+                        cmd.Parameters.AddWithValue("@username", TbUsername.Text.Trim());
+                        cmd.Parameters.AddWithValue("@password", HashPassword(TbPassword.Text));
+
+                        using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Simpan sesi
+                                UserContext.IdPengguna = reader.GetInt32(0);
+                                UserContext.Nama       = reader.GetString(1);
+                                UserContext.Username   = reader.GetString(2);
+                                UserContext.IdRole     = reader.GetInt32(3);
+                                UserContext.NamaRole   = reader.GetString(4);
+
+                                if (UserContext.IdRole == 1) // Admin
+                                {
+                                    Form2 admin = new Form2();
+                                    admin.Show();
+                                    this.Hide();
+                                }
+                                else if (UserContext.IdRole == 2) // Manager
+                                {
+                                    FormManager manager = new FormManager();
+                                    manager.Show();
+                                    this.Hide();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Username atau Password salah!", "Login Gagal",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Koneksi Gagal",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-    }
-    catch (Exception ex)
-    {
-        MessageBox.Show(ex.Message);
-    }
-}
 
         private string HashPassword(string password)
         {
