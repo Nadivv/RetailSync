@@ -73,6 +73,26 @@ namespace RetailSync.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Kelola_Inventori_Toko__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Kelola Inventori Toko (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Perubahan_Terakhir {
+            get {
+                object obj = ResourceManager.GetObject("Perubahan Terakhir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_adrien_olichon_1257089_2387532 {
             get {
                 object obj = ResourceManager.GetObject("pexels-adrien-olichon-1257089-2387532", resourceCulture);
@@ -103,6 +123,26 @@ namespace RetailSync.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_1__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 1 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_45__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 45 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap retailsync_logo_1779298260371 {
             get {
                 object obj = ResourceManager.GetObject("retailsync_logo_1779298260371", resourceCulture);
@@ -116,6 +156,88 @@ namespace RetailSync.Properties {
         internal static System.Drawing.Bitmap sembako_retail_bg_1779284639719 {
             get {
                 object obj = ResourceManager.GetObject("sembako_retail_bg_1779284639719", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stok_akan_terupdate_secara_otomatis_ketika_ada_transaksi_penjualan_atau_penerimaan_barang {
+            get {
+                object obj = ResourceManager.GetObject("Stok akan terupdate secara otomatis ketika ada transaksi penjualan atau penerimaa" +
+                        "n barang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stok_akan_terupdate_secara_otomatis_ketika_ada_transaksi_penjualan_atau_penerimaan_barang__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Stok akan terupdate secara otomatis ketika ada transaksi penjualan atau penerimaa" +
+                        "n barang (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stok_saat_ini {
+            get {
+                object obj = ResourceManager.GetObject("Stok saat ini", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sumber {
+            get {
+                object obj = ResourceManager.GetObject("Sumber", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Update_Stok_Otomatis__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Update Stok Otomatis (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Update_Stok_Otomatis__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Update Stok Otomatis (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Update_Stok_Otomatis__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Update Stok Otomatis (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Update_Stok_Otomatis__5_ {
+            get {
+                object obj = ResourceManager.GetObject("Update Stok Otomatis (5)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
