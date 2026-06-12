@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Update_Stok_Otomatis));
             panel1 = new Panel();
-            button2 = new Button();
             button11 = new Button();
             button10 = new Button();
             button9 = new Button();
@@ -80,6 +79,7 @@
             colSumber = new DataGridViewTextBoxColumn();
             colStatus = new DataGridViewTextBoxColumn();
             button6 = new Button();
+            button2 = new Button();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -110,17 +110,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(200, 749);
             panel1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(-3, 310);
-            button2.Name = "button2";
-            button2.Size = new Size(203, 75);
-            button2.TabIndex = 12;
-            button2.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
@@ -589,6 +578,17 @@
             button6.TabIndex = 13;
             button6.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(-3, 310);
+            button2.Name = "button2";
+            button2.Size = new Size(203, 66);
+            button2.TabIndex = 12;
+            button2.UseVisualStyleBackColor = true;
+            // 
             // Update_Stok_Otomatis
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -642,7 +642,6 @@
         private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel3;
         private TableLayoutPanel tableLayoutPanel4;
-        private Button button2;
         private Panel panel2;
         private Panel panel3;
         private Panel panel4;
@@ -678,5 +677,6 @@
         private DataGridViewTextBoxColumn colSumber;
         private DataGridViewTextBoxColumn colStatus;
         private Button button6;
+        private Button button2;
     }
 }
