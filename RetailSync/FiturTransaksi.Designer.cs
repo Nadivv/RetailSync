@@ -65,6 +65,7 @@
             colWaktu = new DataGridViewTextBoxColumn();
             colKasir = new DataGridViewTextBoxColumn();
             colProduk = new DataGridViewTextBoxColumn();
+            colTotal = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -372,7 +373,7 @@
             panel4.Controls.Add(label15);
             panel4.Location = new Point(229, 312);
             panel4.Name = "panel4";
-            panel4.Size = new Size(788, 390);
+            panel4.Size = new Size(950, 390);
             panel4.TabIndex = 22;
             // 
             // label15
@@ -391,34 +392,44 @@
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colNo, colWaktu, colKasir, colProduk });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colNo, colWaktu, colKasir, colProduk, colTotal });
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.Location = new Point(12, 41);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridView1.RowHeadersVisible = false;
-            dataGridView1.Size = new Size(761, 336);
+            dataGridView1.Size = new Size(924, 336);
             dataGridView1.TabIndex = 22;
             // 
             // colNo
             // 
             colNo.HeaderText = "No";
             colNo.Name = "colNo";
+            colNo.Width = 50;
             // 
             // colWaktu
             // 
             colWaktu.HeaderText = "Waktu";
             colWaktu.Name = "colWaktu";
+            colWaktu.Width = 280;
             // 
             // colKasir
             // 
             colKasir.HeaderText = "Kasir (ID)";
             colKasir.Name = "colKasir";
+            colKasir.Width = 130;
             // 
             // colProduk
             // 
             colProduk.HeaderText = "Produk";
             colProduk.Name = "colProduk";
+            colProduk.Width = 280;
+            // 
+            // colTotal
+            // 
+            colTotal.HeaderText = "Total";
+            colTotal.Name = "colTotal";
+            colTotal.Width = 180;
             // 
             // FiturTransaksi
             // 
@@ -486,10 +497,11 @@
         private DateTimePicker dateTimePicker2;
         private Panel panel4;
         private DataGridView dataGridView1;
+        private Label label15;
         private DataGridViewTextBoxColumn colNo;
         private DataGridViewTextBoxColumn colWaktu;
         private DataGridViewTextBoxColumn colKasir;
         private DataGridViewTextBoxColumn colProduk;
-        private Label label15;
+        private DataGridViewTextBoxColumn colTotal;
     }
 }
