@@ -83,6 +83,16 @@ namespace RetailSync.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_55 {
+            get {
+                object obj = ResourceManager.GetObject("Group 55", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Kelola_Inventori_Toko__4_ {
             get {
                 object obj = ResourceManager.GetObject("Kelola Inventori Toko (4)", resourceCulture);
@@ -156,6 +166,16 @@ namespace RetailSync.Properties {
         internal static System.Drawing.Bitmap Rectangle_45__1_ {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 45 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_45__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 45 (4)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
