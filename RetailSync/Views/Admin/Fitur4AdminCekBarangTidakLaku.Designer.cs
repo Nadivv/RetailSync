@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class CekBarangTidakLaku
+    partial class Fitur4AdminCekBarangTidakLaku
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CekBarangTidakLaku));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fitur4AdminCekBarangTidakLaku));
             panel1 = new Panel();
             button7 = new Button();
             button6 = new Button();

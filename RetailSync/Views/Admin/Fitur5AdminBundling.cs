@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace RetailSync
 {
-    public partial class FiturMonitoring : Form
+    public partial class Fitur5AdminBundling : Form
     {
-        public FiturMonitoring()
+        public Fitur5AdminBundling()
         {
             InitializeComponent();
-        }
-
-        private void FiturMonitoring_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class LaporanKeuangan
+    partial class Fitur6AdminLaporanKeuangan
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaporanKeuangan));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fitur6AdminLaporanKeuangan));
             panel1 = new Panel();
             button9 = new Button();
             button8 = new Button();

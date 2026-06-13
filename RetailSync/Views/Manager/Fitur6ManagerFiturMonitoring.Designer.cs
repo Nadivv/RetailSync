@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class FiturMonitoring
+    partial class Fitur6ManagerFiturMonitoring
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiturMonitoring));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fitur6ManagerFiturMonitoring));
             panel1 = new Panel();
             button2 = new Button();
             button1 = new Button();

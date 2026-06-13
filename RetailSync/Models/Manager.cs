@@ -6,37 +6,26 @@ using System.Threading.Tasks;
 
 namespace RetailSync.Models
 {
-    // ═══════════════════════════════════════════════════
-    //  INHERITANCE + POLYMORPHISM
-    //  BranchManager extends Pengguna
-    //  Association: punya properti NamaCabang
-    // ═══════════════════════════════════════════════════
-    class BranchManager : Pengguna
+    // Pilar INHERITANSI: Manager mewarisi seluruh sifat dari Pengguna
+    public class Manager : Pengguna
     {
-        // Association: BranchManager berelasi dengan Cabang
-        public string NamaCabang { get; set; }
+        // ID Role untuk Manager di database adalah 2
+        public Manager(int id, string nama, string username, bool isAktif)
+            : base(id, nama, username, 2, isAktif) { }
 
-        public BranchManager(int id, string nama, string username, string namaCabang = "Cabang Utama")
-            : base(id, nama, username, "Branch Manager")
-        {
-            NamaCabang = namaCabang;
-        }
+        // Pilar POLIMORFISME: Menimpa fungsionalitas dasar untuk kebutuhan Manager
+        public override string GetRoleLabel() => "[ MANAGER/KASIR ]";
 
-        // Polymorphism: implementasi berbeda dari SuperAdmin
-        public override string GetRoleLabel() => $"[ BRANCH MANAGER — {NamaCabang} ]";
-
+        // Menu dibatasi hanya yang terhubung garis biru pada Use Case Diagram
         public override string[] GetMenuItems() => new[]
         {
-            "1. Kelola Inventori (Gudang/Toko)",
+            "1. Kelola Inventori (Gudang / Toko)",
             "2. Transfer Stok Antar Cabang",
             "3. Transaksi Penjualan (Kasir)",
             "4. Update Stok Otomatis",
             "5. Lihat Laporan Harian",
-            "6. Lihat Produk Terlaris",
-            "7. Kelola Pesanan",
-            "8. Monitoring Stok Real-time",
-            "── ────────────────────────",
-            "0. Logout"
+            "6. Kelola Pesanan",
+            "7. Logout"
         };
     }
 }

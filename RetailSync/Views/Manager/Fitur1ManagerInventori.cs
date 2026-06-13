@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RetailSync
 {
-    public partial class FiturInventori : Form
+    public partial class Fitur1ManagerInventori : Form
     {
-        public FiturInventori()
+        public Fitur1ManagerInventori()
         {
             InitializeComponent();
             textBox1.TextChanged += textBox1_TextChanged;

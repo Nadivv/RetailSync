@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RetailSync
 {
-    public partial class LaporanKeuangan : Form
+    public partial class Fitur6AdminLaporanKeuangan : Form
     {
-        public LaporanKeuangan()
+        public Fitur6AdminLaporanKeuangan()
         {
             InitializeComponent();
         }

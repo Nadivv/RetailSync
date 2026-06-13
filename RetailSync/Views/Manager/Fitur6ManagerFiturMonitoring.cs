@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace RetailSync
 {
-    public partial class CekBarangTidakLaku : Form
+    public partial class Fitur6ManagerFiturMonitoring : Form
     {
-        public CekBarangTidakLaku()
+        public Fitur6ManagerFiturMonitoring()
         {
             InitializeComponent();
+        }
+
+        private void FiturMonitoring_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

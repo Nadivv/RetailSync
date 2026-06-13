@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RetailSync
 {
-    public partial class FiturKelolaPesanan : Form
+    public partial class Fitur5ManagerFiturKelolaPesanan : Form
     {
-        public FiturKelolaPesanan()
+        public Fitur5ManagerFiturKelolaPesanan()
         {
             InitializeComponent();
         }

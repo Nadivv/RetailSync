@@ -6,36 +6,26 @@ using System.Threading.Tasks;
 
 namespace RetailSync.Models
 {
-    // ═══════════════════════════════════════════════════
-    //  INHERITANCE + POLYMORPHISM
-    //  SuperAdmin extends Pengguna
-    // ═══════════════════════════════════════════════════
-    class Admin : Pengguna
+    // Pilar INHERITANSI: Admin mewarisi seluruh sifat dari Pengguna
+    public class Admin : Pengguna
     {
-        public Admin(int id, string nama, string username)
-            : base(id, nama, username, "Admin") { }
+        // ID Role untuk Admin di database adalah 1
+        public Admin(int id, string nama, string username, bool isAktif)
+            : base(id, nama, username, 1, isAktif) { }
 
-        // Polymorphism: implementasi berbeda dari BranchManager
+        // Pilar POLIMORFISME: Menimpa fungsionalitas dasar untuk kebutuhan Admin
         public override string GetRoleLabel() => "[ ADMIN — HQ/Owner ]";
 
         public override string[] GetMenuItems() => new[]
         {
-            "1.  Kelola Data Vendor & Produk",
-            "2.  Lihat Laporan Penjualan",
-            "3.  Lihat Riwayat Harga",
-            "4.  Cek Barang Tidak Laku",
-            "5.  Kelola Produk Paket / Bundling",
-            "6.  Lihat Laporan Keuangan",
-            "7.  Kelola Inventori (Gudang/Toko)",
-            "8. Transfer Stok Antar Cabang",
-            "9. Transaksi Penjualan (Kasir)",
-            "10. Update Stok Otomatis",
-            "11. Lihat Laporan Harian",
-            "12. Lihat Produk Terlaris",
-            "13. Kelola Pesanan",
-            "14. Monitoring Stok Real-time",
-            "── ─────────────────────────",
-            "0.  Logout"
+            "1. Kelola Data Produk",
+            "2. Lihat Laporan Penjualan",
+            "3. Lihat Riwayat Harga",
+            "4. Cek Barang Tidak Laku",
+            "5. Kelola Produk Paket (Bundling)",
+            "6. Lihat Laporan Keuangan",
+            "7. Lihat Produk Terlaris",
+            "8. Logout"
         };
     }
 }

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace RetailSync
 {
-    public partial class LihatProdukTerlaris : Form
+    public partial class Fitur2ManagerTransaksiKasir : Form
     {
-        public LihatProdukTerlaris()
+        public Fitur2ManagerTransaksiKasir()
         {
             InitializeComponent();
         }
 
-        private void LihatProdukTerlaris_Load(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }

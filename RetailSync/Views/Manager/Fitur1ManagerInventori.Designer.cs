@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class FiturInventori
+    partial class Fitur1ManagerInventori
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiturInventori));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fitur1ManagerInventori));
             panel1 = new Panel();
             textBox1 = new TextBox();
             label1 = new Label();

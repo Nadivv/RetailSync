@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class FiturTransaksi
+    partial class Fitur2ManagerTransaksiKasir
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiturTransaksi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fitur2ManagerTransaksiKasir));
             panel1 = new Panel();
             button5 = new Button();
             button1 = new Button();

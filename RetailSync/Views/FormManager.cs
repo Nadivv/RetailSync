@@ -2972,7 +2972,7 @@ namespace RetailSync
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 foreach (Form f in Application.OpenForms)
-                    if (f is Form1) { f.Show(); break; }
+                    if (f is Login) { f.Show(); break; }
                 Close();
             }
         }

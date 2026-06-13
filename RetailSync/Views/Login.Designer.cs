@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             panel2 = new Panel();
             panel1 = new Panel();
             panel3 = new Panel();

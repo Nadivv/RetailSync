@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class FiturBundling
+    partial class Fitur5AdminBundling
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiturBundling));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fitur5AdminBundling));
             panel1 = new Panel();
             button9 = new Button();
             button8 = new Button();

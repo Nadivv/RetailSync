@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace RetailSync
 {
-    public partial class FiturTransaksi : Form
+    public partial class Fitur4ManagerLaporanHarian : Form
     {
-        public FiturTransaksi()
+        public Fitur4ManagerLaporanHarian()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void label16_Click(object sender, EventArgs e)
         {
 
         }

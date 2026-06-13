@@ -14,7 +14,7 @@ namespace RetailSync
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             UserSeederHelper.AdminSeed();
-            Application.Run(new Form1());
+            Application.Run(new Login());
         }
     }
 }

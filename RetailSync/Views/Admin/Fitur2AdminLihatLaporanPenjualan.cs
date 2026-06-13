@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RetailSync
 {
-    public partial class FiturBundling : Form
+    public partial class Fitur2AdminLihatLaporanPenjualan : Form
     {
-        public FiturBundling()
+        public Fitur2AdminLihatLaporanPenjualan()
         {
             InitializeComponent();
         }

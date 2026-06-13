@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class LihatProdukTerlaris
+    partial class Fitur7AdminLihatProdukTerlaris
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LihatProdukTerlaris));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fitur7AdminLihatProdukTerlaris));
             panel1 = new Panel();
             button9 = new Button();
             button8 = new Button();
