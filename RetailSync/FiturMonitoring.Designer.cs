@@ -1,6 +1,6 @@
 ﻿namespace RetailSync
 {
-    partial class FiturLaporanHarian
+    partial class FiturMonitoring
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiturLaporanHarian));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiturMonitoring));
             panel1 = new Panel();
             button2 = new Button();
             button1 = new Button();
             button6 = new Button();
             button7 = new Button();
-            button3 = new Button();
+            button8 = new Button();
             button9 = new Button();
             button10 = new Button();
             button11 = new Button();
-            label9 = new Label();
             label10 = new Label();
-            label1 = new Label();
+            label9 = new Label();
             label2 = new Label();
+            label1 = new Label();
+            dateTimePicker2 = new DateTimePicker();
+            label14 = new Label();
+            label13 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             tableLayoutPanel1 = new TableLayoutPanel();
             panel2 = new Panel();
             label7 = new Label();
@@ -56,25 +60,29 @@
             label12 = new Label();
             tableLayoutPanel3 = new TableLayoutPanel();
             panel4 = new Panel();
-            label13 = new Label();
-            label14 = new Label();
             label15 = new Label();
             label16 = new Label();
-            panel5 = new Panel();
             label17 = new Label();
-            dataGridView1 = new DataGridView();
-            panel6 = new Panel();
             label18 = new Label();
-            dataGridView2 = new DataGridView();
-            colNoTransaksi = new DataGridViewTextBoxColumn();
-            colWaktu = new DataGridViewTextBoxColumn();
-            colPelanggan = new DataGridViewTextBoxColumn();
-            colTotal = new DataGridViewTextBoxColumn();
-            colKasir = new DataGridViewTextBoxColumn();
-            colNo = new DataGridViewTextBoxColumn();
-            colProduk = new DataGridViewTextBoxColumn();
-            colTerjual = new DataGridViewTextBoxColumn();
-            colTotalPenjualan = new DataGridViewTextBoxColumn();
+            tableLayoutPanel4 = new TableLayoutPanel();
+            panel5 = new Panel();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            panel6 = new Panel();
+            label23 = new Label();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            dataGridView1 = new DataGridView();
+            colTanggal = new DataGridViewTextBoxColumn();
+            colKategori = new DataGridViewTextBoxColumn();
+            colDeskripsi = new DataGridViewTextBoxColumn();
+            colPemasukkan = new DataGridViewTextBoxColumn();
+            colPengeluaran = new DataGridViewTextBoxColumn();
+            colSaldo = new DataGridViewTextBoxColumn();
+            colMetode = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -82,10 +90,10 @@
             panel3.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             panel4.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
             panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -95,10 +103,11 @@
             panel1.Controls.Add(button11);
             panel1.Controls.Add(button10);
             panel1.Controls.Add(button9);
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(button8);
             panel1.Controls.Add(button7);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(button1);
+            panel1.Controls.Add(button2);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -110,10 +119,10 @@
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.FlatStyle = FlatStyle.Popup;
             button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.Location = new Point(0, 98);
+            button2.Location = new Point(0, 97);
             button2.Name = "button2";
             button2.Size = new Size(200, 65);
-            button2.TabIndex = 2;
+            button2.TabIndex = 4;
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -121,10 +130,10 @@
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.FlatStyle = FlatStyle.Popup;
             button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.Location = new Point(-2, 164);
+            button1.Location = new Point(0, 163);
             button1.Name = "button1";
             button1.Size = new Size(284, 66);
-            button1.TabIndex = 6;
+            button1.TabIndex = 8;
             button1.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -132,10 +141,10 @@
             button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
             button6.FlatStyle = FlatStyle.Popup;
             button6.Image = (Image)resources.GetObject("button6.Image");
-            button6.Location = new Point(0, 231);
+            button6.Location = new Point(0, 229);
             button6.Name = "button6";
             button6.Size = new Size(236, 74);
-            button6.TabIndex = 14;
+            button6.TabIndex = 16;
             button6.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -143,32 +152,32 @@
             button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
             button7.FlatStyle = FlatStyle.Popup;
             button7.Image = (Image)resources.GetObject("button7.Image");
-            button7.Location = new Point(-29, 301);
+            button7.Location = new Point(-24, 304);
             button7.Name = "button7";
-            button7.Size = new Size(229, 65);
-            button7.TabIndex = 3;
+            button7.Size = new Size(224, 65);
+            button7.TabIndex = 17;
             button7.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button8
             // 
-            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.Location = new Point(-2, 359);
-            button3.Name = "button3";
-            button3.Size = new Size(284, 65);
-            button3.TabIndex = 15;
-            button3.UseVisualStyleBackColor = true;
+            button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
+            button8.FlatStyle = FlatStyle.Popup;
+            button8.Image = (Image)resources.GetObject("button8.Image");
+            button8.Location = new Point(-24, 366);
+            button8.Name = "button8";
+            button8.Size = new Size(224, 65);
+            button8.TabIndex = 18;
+            button8.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
             button9.BackgroundImage = (Image)resources.GetObject("button9.BackgroundImage");
             button9.FlatStyle = FlatStyle.Popup;
             button9.Image = (Image)resources.GetObject("button9.Image");
-            button9.Location = new Point(-12, 419);
+            button9.Location = new Point(-12, 432);
             button9.Name = "button9";
             button9.Size = new Size(212, 65);
-            button9.TabIndex = 10;
+            button9.TabIndex = 19;
             button9.UseVisualStyleBackColor = true;
             // 
             // button10
@@ -176,10 +185,10 @@
             button10.BackgroundImage = (Image)resources.GetObject("button10.BackgroundImage");
             button10.FlatStyle = FlatStyle.Popup;
             button10.Image = (Image)resources.GetObject("button10.Image");
-            button10.Location = new Point(-12, 480);
+            button10.Location = new Point(-12, 497);
             button10.Name = "button10";
             button10.Size = new Size(222, 65);
-            button10.TabIndex = 11;
+            button10.TabIndex = 20;
             button10.UseVisualStyleBackColor = true;
             // 
             // button11
@@ -187,11 +196,19 @@
             button11.BackgroundImage = (Image)resources.GetObject("button11.BackgroundImage");
             button11.FlatStyle = FlatStyle.Popup;
             button11.Image = (Image)resources.GetObject("button11.Image");
-            button11.Location = new Point(0, 543);
+            button11.Location = new Point(0, 562);
             button11.Name = "button11";
-            button11.Size = new Size(200, 206);
-            button11.TabIndex = 16;
+            button11.Size = new Size(200, 184);
+            button11.TabIndex = 21;
             button11.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            label10.Image = (Image)resources.GetObject("label10.Image");
+            label10.Location = new Point(261, 31);
+            label10.Name = "label10";
+            label10.Size = new Size(264, 23);
+            label10.TabIndex = 16;
             // 
             // label9
             // 
@@ -199,44 +216,70 @@
             label9.Location = new Point(229, 29);
             label9.Name = "label9";
             label9.Size = new Size(26, 23);
-            label9.TabIndex = 11;
-            // 
-            // label10
-            // 
-            label10.Image = (Image)resources.GetObject("label10.Image");
-            label10.Location = new Point(265, 31);
-            label10.Name = "label10";
-            label10.Size = new Size(202, 23);
-            label10.TabIndex = 12;
-            // 
-            // label1
-            // 
-            label1.Image = (Image)resources.GetObject("label1.Image");
-            label1.Location = new Point(199, 93);
-            label1.Name = "label1";
-            label1.Size = new Size(1087, 11);
-            label1.TabIndex = 16;
+            label9.TabIndex = 15;
             // 
             // label2
             // 
             label2.Image = (Image)resources.GetObject("label2.Image");
-            label2.Location = new Point(310, 93);
+            label2.Location = new Point(199, 93);
             label2.Name = "label2";
             label2.Size = new Size(1087, 11);
-            label2.TabIndex = 17;
+            label2.TabIndex = 19;
+            // 
+            // label1
+            // 
+            label1.Image = (Image)resources.GetObject("label1.Image");
+            label1.Location = new Point(280, 93);
+            label1.Name = "label1";
+            label1.Size = new Size(1087, 11);
+            label1.TabIndex = 20;
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Format = DateTimePickerFormat.Custom;
+            dateTimePicker2.Location = new Point(444, 139);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(96, 23);
+            dateTimePicker2.TabIndex = 25;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(410, 144);
+            label14.Name = "label14";
+            label14.Size = new Size(28, 15);
+            label14.TabIndex = 24;
+            label14.Text = "S/d:";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(239, 143);
+            label13.Name = "label13";
+            label13.Size = new Size(31, 15);
+            label13.TabIndex = 23;
+            label13.Text = "Dari:";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(280, 139);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(96, 23);
+            dateTimePicker1.TabIndex = 22;
             // 
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(panel2, 0, 0);
-            tableLayoutPanel1.Location = new Point(265, 130);
+            tableLayoutPanel1.Location = new Point(280, 181);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new Size(200, 100);
-            tableLayoutPanel1.TabIndex = 18;
+            tableLayoutPanel1.TabIndex = 26;
             // 
             // panel2
             // 
@@ -281,22 +324,22 @@
             label5.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(50, 12);
             label5.Name = "label5";
-            label5.Size = new Size(107, 22);
+            label5.Size = new Size(125, 22);
             label5.TabIndex = 1;
-            label5.Text = "Total Penjualan";
+            label5.Text = "Total Pemasukkan";
             // 
             // tableLayoutPanel2
             // 
             tableLayoutPanel2.ColumnCount = 1;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Controls.Add(panel3, 0, 0);
-            tableLayoutPanel2.Location = new Point(505, 130);
+            tableLayoutPanel2.Location = new Point(525, 181);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel2.Size = new Size(200, 100);
-            tableLayoutPanel2.TabIndex = 19;
+            tableLayoutPanel2.TabIndex = 27;
             // 
             // panel3
             // 
@@ -313,7 +356,7 @@
             // label6
             // 
             label6.Image = (Image)resources.GetObject("label6.Image");
-            label6.Location = new Point(15, 31);
+            label6.Location = new Point(15, 32);
             label6.Name = "label6";
             label6.Size = new Size(29, 29);
             label6.TabIndex = 7;
@@ -341,89 +384,181 @@
             label12.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.Location = new Point(50, 12);
             label12.Name = "label12";
-            label12.Size = new Size(106, 22);
+            label12.Size = new Size(123, 22);
             label12.TabIndex = 1;
-            label12.Text = "Total Transaksi";
+            label12.Text = "Total Pengeluaran";
             // 
             // tableLayoutPanel3
             // 
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.Controls.Add(panel4, 0, 0);
-            tableLayoutPanel3.Location = new Point(751, 130);
+            tableLayoutPanel3.Location = new Point(774, 181);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel3.Size = new Size(200, 100);
-            tableLayoutPanel3.TabIndex = 20;
+            tableLayoutPanel3.TabIndex = 28;
             // 
             // panel4
             // 
             panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Controls.Add(label13);
-            panel4.Controls.Add(label14);
             panel4.Controls.Add(label15);
             panel4.Controls.Add(label16);
+            panel4.Controls.Add(label17);
+            panel4.Controls.Add(label18);
             panel4.Location = new Point(3, 3);
             panel4.Name = "panel4";
             panel4.Size = new Size(194, 94);
             panel4.TabIndex = 0;
             // 
-            // label13
-            // 
-            label13.Image = (Image)resources.GetObject("label13.Image");
-            label13.Location = new Point(15, 32);
-            label13.Name = "label13";
-            label13.Size = new Size(29, 29);
-            label13.TabIndex = 7;
-            // 
-            // label14
-            // 
-            label14.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(50, 39);
-            label14.Name = "label14";
-            label14.Size = new Size(88, 22);
-            label14.TabIndex = 3;
-            // 
             // label15
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.Location = new Point(65, 39);
+            label15.Image = (Image)resources.GetObject("label15.Image");
+            label15.Location = new Point(15, 32);
             label15.Name = "label15";
-            label15.Size = new Size(0, 22);
-            label15.TabIndex = 2;
+            label15.Size = new Size(29, 29);
+            label15.TabIndex = 7;
             // 
             // label16
             // 
-            label16.AutoSize = true;
             label16.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.Location = new Point(50, 12);
+            label16.Location = new Point(50, 39);
             label16.Name = "label16";
-            label16.Size = new Size(99, 22);
-            label16.TabIndex = 1;
-            label16.Text = "Produk Terjual";
-            label16.Click += label16_Click;
-            // 
-            // panel5
-            // 
-            panel5.Controls.Add(dataGridView1);
-            panel5.Controls.Add(label17);
-            panel5.Location = new Point(265, 266);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(928, 231);
-            panel5.TabIndex = 21;
+            label16.Size = new Size(88, 22);
+            label16.TabIndex = 3;
             // 
             // label17
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.Location = new Point(19, 17);
+            label17.Location = new Point(65, 39);
             label17.Name = "label17";
-            label17.Size = new Size(103, 22);
-            label17.TabIndex = 0;
-            label17.Text = "Produk Terlaris";
+            label17.Size = new Size(0, 22);
+            label17.TabIndex = 2;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.Location = new Point(50, 12);
+            label18.Name = "label18";
+            label18.Size = new Size(82, 22);
+            label18.TabIndex = 1;
+            label18.Text = "Laba Bersih";
+            // 
+            // tableLayoutPanel4
+            // 
+            tableLayoutPanel4.ColumnCount = 1;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel4.Controls.Add(panel5, 0, 0);
+            tableLayoutPanel4.Location = new Point(1031, 181);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 1;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel4.Size = new Size(200, 100);
+            tableLayoutPanel4.TabIndex = 29;
+            // 
+            // panel5
+            // 
+            panel5.BorderStyle = BorderStyle.FixedSingle;
+            panel5.Controls.Add(label19);
+            panel5.Controls.Add(label20);
+            panel5.Controls.Add(label21);
+            panel5.Controls.Add(label22);
+            panel5.Location = new Point(3, 3);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(194, 94);
+            panel5.TabIndex = 0;
+            // 
+            // label19
+            // 
+            label19.Image = (Image)resources.GetObject("label19.Image");
+            label19.Location = new Point(15, 32);
+            label19.Name = "label19";
+            label19.Size = new Size(29, 29);
+            label19.TabIndex = 7;
+            // 
+            // label20
+            // 
+            label20.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label20.Location = new Point(50, 39);
+            label20.Name = "label20";
+            label20.Size = new Size(88, 22);
+            label20.TabIndex = 3;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label21.Location = new Point(65, 39);
+            label21.Name = "label21";
+            label21.Size = new Size(0, 22);
+            label21.TabIndex = 2;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.Location = new Point(50, 12);
+            label22.Name = "label22";
+            label22.Size = new Size(81, 22);
+            label22.TabIndex = 1;
+            label22.Text = "Saldo Akhir";
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(dataGridView1);
+            panel6.Controls.Add(button5);
+            panel6.Controls.Add(button4);
+            panel6.Controls.Add(button3);
+            panel6.Controls.Add(label23);
+            panel6.Location = new Point(222, 304);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(1136, 433);
+            panel6.TabIndex = 30;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label23.Location = new Point(12, 12);
+            label23.Name = "label23";
+            label23.Size = new Size(187, 22);
+            label23.TabIndex = 2;
+            label23.Text = "Rincian Transaksi Keuangan";
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.Location = new Point(17, 42);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 30);
+            button3.TabIndex = 3;
+            button3.Text = "Semua";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.Location = new Point(205, 42);
+            button4.Name = "button4";
+            button4.Size = new Size(98, 30);
+            button4.TabIndex = 4;
+            button4.Text = "Pengeluaran";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.Location = new Point(98, 42);
+            button5.Name = "button5";
+            button5.Size = new Size(101, 30);
+            button5.TabIndex = 5;
+            button5.Text = "Pemasukkan";
+            button5.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -432,124 +567,78 @@
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colNo, colProduk, colTerjual, colTotalPenjualan });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colTanggal, colKategori, colDeskripsi, colPemasukkan, colPengeluaran, colSaldo, colMetode });
             dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.Location = new Point(19, 42);
+            dataGridView1.Location = new Point(18, 78);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersVisible = false;
-            dataGridView1.Size = new Size(894, 176);
-            dataGridView1.TabIndex = 1;
+            dataGridView1.Size = new Size(1100, 352);
+            dataGridView1.TabIndex = 6;
             // 
-            // panel6
+            // colTanggal
             // 
-            panel6.Controls.Add(dataGridView2);
-            panel6.Controls.Add(label18);
-            panel6.Location = new Point(265, 506);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(928, 231);
-            panel6.TabIndex = 22;
+            colTanggal.HeaderText = "Tanggal";
+            colTanggal.Name = "colTanggal";
+            colTanggal.Width = 120;
             // 
-            // label18
+            // colKategori
             // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Poppins", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.Location = new Point(19, 17);
-            label18.Name = "label18";
-            label18.Size = new Size(111, 22);
-            label18.TabIndex = 1;
-            label18.Text = "Detail Transaksi";
+            colKategori.HeaderText = "Kategori";
+            colKategori.Name = "colKategori";
+            colKategori.Width = 120;
             // 
-            // dataGridView2
+            // colDeskripsi
             // 
-            dataGridView2.BackgroundColor = SystemColors.Control;
-            dataGridView2.BorderStyle = BorderStyle.None;
-            dataGridView2.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { colNoTransaksi, colWaktu, colPelanggan, colTotal, colKasir });
-            dataGridView2.EnableHeadersVisualStyles = false;
-            dataGridView2.Location = new Point(19, 46);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersVisible = false;
-            dataGridView2.Size = new Size(894, 176);
-            dataGridView2.TabIndex = 2;
+            colDeskripsi.HeaderText = "Deskripsi";
+            colDeskripsi.Name = "colDeskripsi";
+            colDeskripsi.Width = 250;
             // 
-            // colNoTransaksi
+            // colPemasukkan
             // 
-            colNoTransaksi.HeaderText = "No Transaksi";
-            colNoTransaksi.Name = "colNoTransaksi";
-            colNoTransaksi.Width = 179;
+            colPemasukkan.HeaderText = "Pemasukkan";
+            colPemasukkan.Name = "colPemasukkan";
+            colPemasukkan.Width = 150;
             // 
-            // colWaktu
+            // colPengeluaran
             // 
-            colWaktu.HeaderText = "Waktu";
-            colWaktu.Name = "colWaktu";
-            colWaktu.Width = 178;
+            colPengeluaran.HeaderText = "Pengeluaran";
+            colPengeluaran.Name = "colPengeluaran";
+            colPengeluaran.Width = 150;
             // 
-            // colPelanggan
+            // colSaldo
             // 
-            colPelanggan.HeaderText = "Pelanggan";
-            colPelanggan.Name = "colPelanggan";
-            colPelanggan.Width = 179;
+            colSaldo.HeaderText = "Saldo";
+            colSaldo.Name = "colSaldo";
+            colSaldo.Width = 150;
             // 
-            // colTotal
+            // colMetode
             // 
-            colTotal.HeaderText = "Total";
-            colTotal.Name = "colTotal";
-            colTotal.Width = 178;
+            colMetode.HeaderText = "Metode";
+            colMetode.Name = "colMetode";
+            colMetode.Width = 150;
             // 
-            // colKasir
-            // 
-            colKasir.HeaderText = "Kaisr";
-            colKasir.Name = "colKasir";
-            colKasir.Width = 179;
-            // 
-            // colNo
-            // 
-            colNo.FillWeight = 101.522842F;
-            colNo.HeaderText = "No";
-            colNo.Name = "colNo";
-            colNo.Width = 50;
-            // 
-            // colProduk
-            // 
-            colProduk.FillWeight = 99.4923859F;
-            colProduk.HeaderText = "Produk";
-            colProduk.Name = "colProduk";
-            colProduk.Width = 400;
-            // 
-            // colTerjual
-            // 
-            colTerjual.FillWeight = 99.4923859F;
-            colTerjual.HeaderText = "Terjual";
-            colTerjual.Name = "colTerjual";
-            colTerjual.Width = 200;
-            // 
-            // colTotalPenjualan
-            // 
-            colTotalPenjualan.FillWeight = 99.4923859F;
-            colTotalPenjualan.HeaderText = "Total Penjualan";
-            colTotalPenjualan.Name = "colTotalPenjualan";
-            colTotalPenjualan.Width = 230;
-            // 
-            // FiturLaporanHarian
+            // FiturMonitoring
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1370, 749);
             Controls.Add(panel6);
-            Controls.Add(panel5);
+            Controls.Add(tableLayoutPanel4);
             Controls.Add(tableLayoutPanel3);
             Controls.Add(tableLayoutPanel2);
             Controls.Add(tableLayoutPanel1);
-            Controls.Add(label2);
+            Controls.Add(dateTimePicker2);
+            Controls.Add(label14);
+            Controls.Add(label13);
+            Controls.Add(dateTimePicker1);
             Controls.Add(label1);
+            Controls.Add(label2);
             Controls.Add(label10);
             Controls.Add(label9);
-            Controls.Add(button2);
             Controls.Add(panel1);
-            Name = "FiturLaporanHarian";
-            Text = "FiturLaporanHarian";
+            Name = "FiturMonitoring";
+            Text = "FiturMonitoring";
+            Load += FiturMonitoring_Load;
             panel1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
@@ -560,13 +649,14 @@
             tableLayoutPanel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            tableLayoutPanel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -575,15 +665,19 @@
         private Button button2;
         private Button button1;
         private Button button6;
-        private Button button3;
         private Button button7;
+        private Button button8;
         private Button button9;
         private Button button10;
         private Button button11;
-        private Label label9;
         private Label label10;
-        private Label label1;
+        private Label label9;
         private Label label2;
+        private Label label1;
+        private DateTimePicker dateTimePicker2;
+        private Label label14;
+        private Label label13;
+        private DateTimePicker dateTimePicker1;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel2;
         private Label label7;
@@ -598,24 +692,28 @@
         private Label label12;
         private TableLayoutPanel tableLayoutPanel3;
         private Panel panel4;
-        private Label label13;
-        private Label label14;
         private Label label15;
         private Label label16;
-        private Panel panel5;
-        private DataGridView dataGridView1;
         private Label label17;
-        private Panel panel6;
-        private DataGridView dataGridView2;
-        private DataGridViewTextBoxColumn colNoTransaksi;
-        private DataGridViewTextBoxColumn colWaktu;
-        private DataGridViewTextBoxColumn colPelanggan;
-        private DataGridViewTextBoxColumn colTotal;
-        private DataGridViewTextBoxColumn colKasir;
         private Label label18;
-        private DataGridViewTextBoxColumn colNo;
-        private DataGridViewTextBoxColumn colProduk;
-        private DataGridViewTextBoxColumn colTerjual;
-        private DataGridViewTextBoxColumn colTotalPenjualan;
+        private TableLayoutPanel tableLayoutPanel4;
+        private Panel panel5;
+        private Label label19;
+        private Label label20;
+        private Label label21;
+        private Label label22;
+        private Panel panel6;
+        private DataGridView dataGridView1;
+        private Button button5;
+        private Button button4;
+        private Button button3;
+        private Label label23;
+        private DataGridViewTextBoxColumn colTanggal;
+        private DataGridViewTextBoxColumn colKategori;
+        private DataGridViewTextBoxColumn colDeskripsi;
+        private DataGridViewTextBoxColumn colPemasukkan;
+        private DataGridViewTextBoxColumn colPengeluaran;
+        private DataGridViewTextBoxColumn colSaldo;
+        private DataGridViewTextBoxColumn colMetode;
     }
 }

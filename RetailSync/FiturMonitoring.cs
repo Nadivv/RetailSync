@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace RetailSync
 {
-    public partial class FiturKelolaPesanan : Form
+    public partial class FiturMonitoring : Form
     {
-        public FiturKelolaPesanan()
+        public FiturMonitoring()
         {
             InitializeComponent();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
+        private void FiturMonitoring_Load(object sender, EventArgs e)
         {
 
         }

@@ -134,20 +134,21 @@
             button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
             button7.FlatStyle = FlatStyle.Popup;
             button7.Image = (Image)resources.GetObject("button7.Image");
-            button7.Location = new Point(-16, 305);
+            button7.Location = new Point(-31, 305);
             button7.Name = "button7";
-            button7.Size = new Size(229, 65);
+            button7.Size = new Size(231, 65);
             button7.TabIndex = 16;
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
             button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
             button8.FlatStyle = FlatStyle.Popup;
             button8.Image = (Image)resources.GetObject("button8.Image");
-            button8.Location = new Point(-16, 371);
+            button8.Location = new Point(-31, 371);
             button8.Name = "button8";
-            button8.Size = new Size(224, 65);
+            button8.Size = new Size(231, 65);
             button8.TabIndex = 5;
             button8.UseVisualStyleBackColor = true;
             // 
@@ -158,7 +159,7 @@
             button9.Image = (Image)resources.GetObject("button9.Image");
             button9.Location = new Point(-7, 437);
             button9.Name = "button9";
-            button9.Size = new Size(212, 65);
+            button9.Size = new Size(207, 65);
             button9.TabIndex = 17;
             button9.UseVisualStyleBackColor = true;
             // 
@@ -272,6 +273,8 @@
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.BackgroundColor = SystemColors.Control;
             dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colNo, colProduk, colKategori, colStok });
             dataGridView1.EnableHeadersVisualStyles = false;
